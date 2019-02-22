@@ -1,12 +1,14 @@
 <?php
 namespace App\Presenters;
+use App\Models\Model;
+use App\Views\View;
 
 class Presenter
 {
     private $model;
     private $view;
 
-    public function __construct($model, $view)  // Model $model, View $view
+    public function __construct(Model $model, View $view)  // Model $model, View $view
     {
         echo 'Presenter ';
         $this->model = $model;
